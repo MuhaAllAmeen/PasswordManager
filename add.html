@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+        <body>
+            <header>
+                <button class="close-frame" onclick="closeframe()">X</button>
+            </header>
+            <!-- Include password generator -->
+            <h1 class="add-heading">ADD</h1>
+            <form action="/add" method="post">
+                <div class="add-form">
+                    <label for="username" class="credentials">Username: </label>
+                    <input id="username" name= "username" type="text" placeholder="Type your username"></input>
+                    <label for="email" class="credentials">Email: </label>
+                    <input name="email" type="email" placeholder="Type your email here">
+                    <label for="password" class="credentials">Password: </label>
+                    <input name="password" type="password" placeholder="Type your password">
+                    <label for="url" class="credentials">URL: </label>
+                    <input type="url" name="url" placeholder="Type the URL" required>
+                    <input class="submit-btn" name="submit" type="submit" onclick="submit()">
+                    <!-- <button type="button" onclick="submit()">h</button> -->
+                    
+                </div>
+            </form>
+            <script src="main.js"></script> 
+            <script src="server.js"></script> 
+        </body>
+    </head>
+</html>

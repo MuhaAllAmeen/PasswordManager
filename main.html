@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Password Manager</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="login.html" target="login" onclick="openlogin()">Login</a></li>
+                    <li><a href="signup.html" target="signup" onclick="opensignup()">Sign Up</a></li>
+            </nav>
+        </header>
+        <section class="signup-section">
+            <iframe src="signup.html" frameborder="0" title="signup" name="signup" class="signup-frame"></iframe>
+        </section>
+        <section class="login-section">
+            <iframe src="login.html" frameborder="0" title="login" name="login" class="login-frame">
+
+            </iframe>
+        </section>
+        <div class="main">
+        <h1 class="welcome">Welcome to your password manager</h1>
+        <section class="generator-section">
+            <div class="generator-div">
+                <div class="pass-generator">
+                    <label for="generator" class="generator">Password Generator:</label>
+                    <label for="generated-pass" class="generator" id="new-pass"></label>
+                </div>  
+
+                <div class="gen-div">
+                    <button id="generate" onclick="generate(sliderchange())">Generate</button>
+                </div>
+                <div class="slider-div">
+                <input type="range" min="6" max="15" value="8" class="slider" name="slider" onchange="sliderchange()">
+                    <label for="slider" id="slider-label">8</label> 
+                </div>
+            </div>   
+        </section>
+        
+        <section class="button-section">
+            <div class="buttons-div">
+            <div class="vault" ><button class="vault-add-btn" onclick="openvault()">Vault</button></div>
+            <div class="add"><button class="vault-add-btn" onclick="openadd()">Add</button></div>
+            </div>
+        </section>
+        <section class="add-section">
+            <iframe src="add.html" class="add-frame" title="Add" allowfullscreen frameborder="0">
+                <!-- <button class="close-frame" onclick="closeframe()">X</button>
+                <h1>hello</h1> -->
+            </iframe>
+        </section>
+        <section class="vault-section">
+            <iframe src="/vault" class="vault-frame" title="Vault" frameborder="0" allowfullscreen>
+
+            </iframe>
+        </section>
+        
+
+    </div>
+        <script src="main.js"></script> 
+    </body>
+</html>

@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+
+}
+
+.welcome{
+    margin-top: 120px;
+    /* margin-left: 25%; */
+    justify-content: center;
+    text-align: center;
+    position:relative;
+    display:block;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    color: maroon;
+    /* background-color: black; */
+    
+}
+nav{
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(131, 14, 14);
+    position: absolute;
+    
+
+}
+
+nav ul li{
+    position: relative;
+    justify-content: right;
+    float: right;
+    margin-right: 50px;
+    top: 12px;
+    font-size: 20px;
+    list-style-type: none;
+
+}
+
+nav ul li a{
+    color: aliceblue;
+    padding: 5px;
+    text-decoration: none;
+
+}
+nav ul li a:hover{
+    background-color: aliceblue;
+    color: maroon;
+    border-radius: 10px;
+}
+
+.buttons-div{
+    /* background-color: black; */
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+}
+.vault,.add{
+    /* top: 290px; */
+    justify-content: center;
+    position: relative;
+    width: 75px;
+    /* left: 40%; */
+    /* margin-right: 100px; */
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgba(149, 31, 16, 0.514);
+    border-radius: 5px;
+    display: inline-block;
+    
+}
+.vault{
+    padding-right: 40px;
+}
+.vault-add-btn{
+    font-size: 35px;
+    position: relative;
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: maroon;
+    background: transparent;
+    border: none;
+    text-align: center;
+}
+.vault:hover,.add:hover{
+    animation-name: wobbleup;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.2s;
+    animation-delay: 0.1s;
+    animation-fill-mode: none;
+    animation-iteration-count: 1;
+    
+    
+}
+
+@keyframes wobbleup {
+    0%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+.add-section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.add-frame{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    top: 45%;
+    left: 25%;
+    z-index: 1;
+    background-color: white;
+    visibility:hidden;
+    box-shadow: 5px 5px 12px 1px rgb(124, 8, 8);
+}
+
+.add-heading{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Quicksand',sans-serif;
+    text-transform: uppercase;
+    color: maroon;
+}
+
+.add-form{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 2em;
+
+}
+.credentials{
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: 15px;
+    
+}
+
+input{
+    border-radius: 10px;
+    height: 27px;
+    width: 15em;
+    margin-top: 20px;
+    border-color: brown;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.submit-btn{
+    width: 20%;
+    height: 10%;
+    font-size: 25px;
+    font-family: 'Quicksand',sans-serif;
+    color: maroon;
+    justify-content: center;
+    margin-left: 37%;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: rgb(234, 174, 183);
+}
+
+.vault-section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.vault-frame{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    top: 45%;
+    left: 25%;
+    z-index: 1;
+    background-color: white;
+    visibility:hidden;
+    box-shadow: 5px 5px 12px 1px rgb(124, 8, 8);
+}
+
+.vault-heading{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: 'Quicksand',sans-serif;
+    text-transform: uppercase;
+    color: maroon;
+}
+
+h2{
+    font-family: "Quicksand",sans-serif;
+    margin-top: 20px;
+}
+p{
+    position: relative;
+    display: flex;
+    justify-content: baseline;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+hr{
+    color: maroon;
+    height: 2px;
+    background-color: maroon;
+    width: 99%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.close-frame{
+    width: 40px;
+    height: 30px;
+    background-color: rgba(220, 122, 122, 0.959);
+    color:brown;
+    font-size: 1.5em;
+    border-radius: 3px;
+    position: fixed;
+    right: 0px;
+    top:0px;
+}
+.generator-div{
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    /* width: 50%; */
+}
+.generator{
+    font-size: 30px;
+    font-family: 'Quicksand',sans-serif;
+    color: maroon;
+    position: relative;
+    /* top: 80px;
+    left: 500px; */
+}
+
+#new-pass{
+    background-color: maroon;
+    color: white;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+}
+.pass-generator{
+    position: relative;
+    margin-top: 30px;
+}
+#generate{
+    /* position: relative;
+    top: 30px;
+    left: 30rem */
+    font-size: 20px;
+    color: white;
+    background-color: maroon;
+    border-radius: 5px;
+    font-family: 'Quicksand',sans-serif;
+    border: 0;
+    height: 40px;
+    width: 120px;
+}
+
+.gen-div{
+    /* position: absolute; */
+    /* left: calc(48% + 5px);
+    top: 200px */
+}
+
+.slider{
+    /* position: absolute; */
+    /* margin-top: 110px;
+    margin-left: 45%; */
+}
+.slider-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#slider-label{
+    /* position: relative; */
+    /* top: 100px; */
+    /* margin-top: 20%; */
+    /* margin-left: 45%; */
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: maroon;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.login-frame{
+    position: absolute;
+    /* background-color: black; */
+    /* visibility: hidden; */
+    z-index: 1;
+    right: 0;
+    top: 50px;
+    height: 30%;
+    display:none;
+    border: 2px maroon solid;
+}
+
+.signup-frame{
+    position: absolute;
+    /* background-color: black; */
+    /* visibility: hidden; */
+    z-index: 1;
+    right: 0;
+    top: 50px;
+    height: 30%;
+    display:none;
+    border: 2px maroon solid;
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up</title>
+        <link rel="stylesheet" href="signup.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <form action="/signup" method="post">
+        <div class="main-signup-box">
+            <div class="signup-close">
+                <button class="signup-close-btn" onclick="signupclose()">X</button>
+            </div>
+         <div class="signup-heading">
+            <h1>SIGN UP</h1>
+         </div>
+         <div class="signup-contents">
+            <div class="emailpart">
+                <label for="email" class="labelep" >Email: </label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="passpart">
+                <label for="password" class="labelep">Password: </label>
+                <input type="password" name="password" required>
+            </div>
+            <div class="signup-button">
+                <input type="submit" class="signup-btn" value="Sign Up">
+            </div>
+         </div>
+        </div>
+        <script src="main.js"></script> 
+    </form>
+    </body>
+    </body>
+</html>

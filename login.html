@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="login.css">
+        <title>login</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <form action="/login" method="post">
+        <div class="main-login-box">
+            <div class="login-close">
+                <button class="login-close-btn" onclick="loginclose()">X</button>
+            </div>
+         <div class="login-heading">
+            <h1>LOGIN</h1>
+         </div>
+         <div class="login-contents">
+            <div class="emailpart">
+                <label for="email" class="labelep">Email: </label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="passpart">
+                <label for="password" class="labelep">Password: </label>
+                <input type="password" name="password" required>
+            </div>
+            <div class="login-button">
+                <input type="submit" class="login-btn" value="Login">
+            </div>
+         </div>
+        </div>
+        <script src="main.js"></script> 
+        <script src="server.js"></script> 
+    </form>
+    </body>
+</html>
